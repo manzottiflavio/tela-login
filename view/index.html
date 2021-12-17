@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://kit.fontawesome.com/8654d7f733.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  
+  <div class="container">
+    <div class = "content first-content"> <!--Ira conter a primeira parte verde e a parte branca-->
+      <div class = "first-column" > <!--sera a coluna da parte verde-->
+        
+        <h2 class="title title-primary"> Bem vindo de Volta! </h2>
+        <p class="description description-primary"> Continue conectado </p>
+        <p class="description description-primary"> coloque seus dados </p>
+        <form action="telaInicial" method="GET">
+          <button class = "btn btn-primary" type="submit"> seleção de botões</button> <!--botao de login-->
+        </form>
+      </div> 
+      
+      
+      <div class = "second-column">  <!--sera a coluna da parte branca-->
+        <form class="form" action="cadastrarFuncionario" method="post">
+          <h2 class="title title-second"> Criar Conta! </h2>
+          <p class="description description-second">coloque seus dados abaixo </p>
+          
+          <label class="label-input" for="">
+            <i class="fas fa-user icon=modify"></i>
+            <input type="text" placeholder="Name" name="nome">
+          </label>
+          
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon=modify"></i>
+            <input type="text" placeholder="Sobrenome" name="sobrenome">
+          </label>
+          
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon=modify"></i>
+            <input type="text" placeholder="Telefone" name="telefone">
+          </label>
+          
+          
+          
+          
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon=modify"></i>
+            <input type="email" placeholder="Email" name="email">
+          </label>
+          
+          <label  class="label-input" for="">
+            <i class="fas fa-unlock-alt icon=modify"></i>
+            <input type="password" placeholder="Password" name="senha">
+          </label>
+
+
+          <p class="description description-second"> LOCALIZAÇÃO </p>
+          <SELECT name="setor">
+            <OPTION disabled>SELECIONE
+            <OPTION value="Gerencia">GERENCIA</OPTION>  
+            <OPTION value="Manutenção">MANUTENÇÃO</OPTION>  
+            <OPTION value="Faturamento">FATURAMENTO</OPTION>  
+            <OPTION value="Controladoria">CONTROLADORIA</OPTION>  
+            <OPTION value="TI">TI</OPTION>  
+          </SELECT>
+
+
+          <p class="description description-second"> admin </p>
+          <SELECT name="funcao">
+            <OPTION disabled>SELECIONE</OPTION>
+            <OPTION value="usuario">usuario</OPTION>
+            <OPTION value="admin">admin</OPTION>
+            <OPTION value="analista">analista</OPTION>      
+          </SELECT>
+          
+          
+          <button class = "btn btn-second" type="submit">cadastrar</button>
+        </form>
+      </div>
+      
+      <!--Divisor entre a tela 1 e a tela 2 quando move o verde-->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class = "content second-content" > <!--Ira conter a segunda parte parte verde e a parte branca-->
+        <div class = "first-column" > <!--sera a coluna da parte verde-->
+          <h2 class="title"> hello, friend ! </h2>
+          <p class="description"> enter your personal details </p>
+          <p class="description"> and start journey with us</p>
+          <button class = "btn "> SIGN UP </button> <!--botao de login-->
+        </div> 
+        
+        
+        <div class = "second-column">  <!--sera a coluna da parte branca-->
+          <h2 class="title"> Sign in to developer </h2>
+        </div> 
+        <p class="description">or use you email account</p>
+        <form class="form">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          
+          <button class = "btn">home</button>
+        </form>
+      </div>
+      
+    </div>
+    
+    
+    
+  </body>
+  </html>
